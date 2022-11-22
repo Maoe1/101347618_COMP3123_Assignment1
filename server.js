@@ -9,7 +9,7 @@ app.use(express.urlencoded())
 const userModel = require("./models/users")
 const empModel = require("./models/employee")
 
-const routes = require("./routes/restapi_routes.js")
+
 const userRoutes = require('./routes/userRoutes')
 const employeeRoutes = require('./routes/empRoutes')
 
@@ -29,10 +29,7 @@ mongoose.connect(DB_URL,
   });
 
 
-// Using custom routes
 
-
-app.use("/api/v1", routes)  // rest api routing for user and emp
 
 
 // routing for db 
